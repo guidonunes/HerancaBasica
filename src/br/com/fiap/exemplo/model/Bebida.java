@@ -19,4 +19,12 @@ public class Bebida extends Produto {
     public void setTamanho(int tamanho) {
         this.tamanho = tamanho;
     }
+
+    @Override
+    public String getResumo() {
+        return "Nome: " + this.getNome() +
+                " | Ingredientes: " + this.getIngredientes() +
+                " | Preço: R$ " + this.getPreco() +
+                " | Quantidade: " + this.getTamanho() + "ml";
+    }
 }
